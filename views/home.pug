@@ -1,0 +1,55 @@
+extend base.pug
+
+block scripts
+    script(src='/static/index.js')
+    script(type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js")
+    script(nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js%22%3E")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js%22%3E")
+ 
+block style 
+    style
+        include ../static/style.css
+        
+
+block content 
+    
+    section#introsection
+      div.title Welcome to Arshlaan's Coding  Academy 
+      div.small  Eat  sleep  code  Repeat
+
+    section#missionsection 
+      h2   Our Mission   
+      div.card 
+          h3  Coding Perfection
+          div.card-box
+            div.card-img
+                
+                img(src="/static/img/1.png")
+
+            div.card-content
+                p This is the best coding academy of the universe.    
+      div.card 
+          h3  Code the way you like 
+          div.card-box
+            div.card-img
+                img(src="/static/img/3.png")
+
+            div.card-content
+                p This is the best coding academy of the universe. 
+      div.card 
+          h3  Expert Teaching 
+          div.card-box
+            div.card-img
+                img(src="/static/img/2.png")
+
+            div.card-content
+                p This is the best coding academy of the universe. 
+
+    section#sponsorsection 
+      h2   Our Sponsor  
+      div#sponser
+          img(src="/static/img/logo1.png", alt="sponser img" , Class="spimage") 
+          img(src="/static/img/logo2.png", alt="sponser img" , Class="spimage") 
+          img(src="/static/img/logo3.png", alt="sponser img" , Class="spimage") 
+          img(src="/static/img/logo4.png", alt="sponser img" , Class="spimage")     

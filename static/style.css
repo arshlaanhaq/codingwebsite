@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Merriweather:ital@1&display=swap');
+
+* {
+    /* reset css */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#logo {
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0px 10px;
+    font-size: 20px;
+    margin-right: 25px;
+}
+
+#logo img {
+    height: 45px;
+    filter: invert(1);
+
+}
+
+#navbar {
+    background-color: #ae4141;
+    padding: 12px 8px;
+    font-family: 'Merriweather', serif;
+
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; 0*/
+    align-items: center;
+
+}
+
+#navbar li {
+    list-style: none;
+
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+#navbar li a {
+    text-decoration: none;
+    padding: 12px 40px;
+    color: white;
+    letter-spacing: 0.1em;
+    font-size: 20px;
+
+}
+
+#navbar li a:hover {
+    color: black;
+
+}
+
+.menutgl {
+    
+    display: none;
+
+}
+
+#introsection {
+    color: white;
+    display: flex;
+    padding-bottom: 48px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 37px;
+    background: no-repeat center/cover url("../static/bg.jpg");
+    height: 350px;
+    font-family: 'DynaPuff', cursive;
+    background-color: brown;
+}
+
+#introsection div.title {
+    font-size: 48px;
+
+}
+
+#introsection div.small {
+    font-size: 23px;
+    padding: 5px;
+}
+
+#missionsection {
+    height: 326px;
+    margin: auto;
+    width: 88%;
+    /* display: block; */
+
+}
+
+#missionsection h2 {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 36px;
+    font-family: 'Merriweather', serif;
+}
+
+.card {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 27%;
+    margin: 23px 32px;
+    height: 209px;
+}
+
+.card h3 {
+    text-align: center;
+    margin: 0 12px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.card-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-img {
+    height: 124px;
+    padding: 0px 14px;
+    margin: 5px 2px;
+}
+
+.card-img img {
+    height: inherit;
+}
+
+.card-content {
+    padding: 0 12px;
+}
+
+.card-content p {
+    font-size: 19px;
+
+}
+
+#sponsorsection {
+    background-color: #e0ba7da9;
+    height: 300px;
+
+}
+
+#sponsorsection h2 {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 36px;
+    font-family: 'Merriweather', serif;
+}
+
+#sponser {
+    height: 164px;
+    max-width: 1000px;
+    margin: 27px auto;
+}
+
+.spimage {
+    height: 80%;
+    margin: 20px;
+}
+
+#footer {
+    background-color: black;
+    height: 48px;
+    color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-family: 'Merriweather';
+}
+
+/* responsivenesss */
+
+
+@media only screen and (max-width:898Px) {
+    #navbar {
+        padding: 31px 7px;
+        width: 158%;
+    }
+
+    #navbar li a {
+        visibility: hidden;
+        opacity: 0;
+        left: 100%;
+        position: absolute;
+    }
+    
+    .nav.open.navigation{
+        opacity: 1;
+        visibility: visible;
+        left: 0;
+
+    }
+ 
+    .menutgl {
+        position: absolute;
+        display: block;
+        font-size: 59px;
+        padding: -4px;
+        cursor: pointer;
+        left: 133%;
+        top: 36px;
+    }
+   
+    #logo {
+       
+        margin: 4px 5px;
+        font-size: 33px;
+        
+    }
+    #logo img {
+        height: 66px;
+        filter: invert(0);
+    }
+
+    #introsection {
+        width: 158%;
+        height: 455px;
+
+    }
+
+    #introsection div.small {
+
+        padding-top: 15px;
+    }
+
+    #missionsection {
+        height: 800px;
+        margin: 14px 17px;
+        width: 113%;
+        /* display: block; */
+    }
+
+    #missionsection h2 {
+        text-align: center;
+        padding-top: 4px;
+        padding-left: 121px;
+        font-size: 44px;
+        font-family: 'Merriweather', serif;
+    }
+
+    .card {
+        /* display: inline-block; */
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 96%;
+        margin: 22px 68px;
+        height: 209px;
+    }
+    .card h3 {
+        margin-top: 17px;
+        font-size: 27px;
+        
+    }
+
+    #sponsorsection {
+        background-color: #e0ba7da9;
+        width: 158%;
+        height: 500px;
+    }
+
+    #sponsorsection h2 {
+        text-align: center;
+        padding-top: 13px;
+        font-size: 44px;
+        font-family: 'Merriweather', serif;
+    }
+    #sponser {
+        height: 152px;
+        
+    }    
+
+    #footer {
+        background-color: black;
+        height: 123px;
+        color: wheat;
+        width: 158%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        font-family: 'Merriweather';
+    }
+
+}
+
+
+
+
+
+@media (min-width:900px) and (max-width:1300px) {
+    #introsection {
+        color: white;
+        display: flex;
+        padding-bottom: 40px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 38px;
+        background: no-repeat center/cover url(../static/bg.jpg);
+        height: 400px;
+        font-family: 'DynaPuff', cursive;
+        background-color: brown;
+    }
+
+    #introsection div.title {
+        font-size: 43px;
+    }
+
+    #missionsection {
+        height: 400px;
+    }
+
+    #missionsection h2 {
+        font-size: 44px;
+
+    }
+
+    .card {
+        display: inline-block;
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 30%;
+        margin: 36px 13px;
+        height: 194px;
+    }
+
+    .card h3 {
+        text-align: center;
+        margin: 7px 8px;
+
+        /* font-size: 19px; */
+        font-weight: bolder;
+        margin-top: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .card-img {
+        height: 104px;
+        padding: 1px 6px;
+        margin: 12px 2px;
+    }
+
+    .card-content {
+        padding: 1px 14px;
+    }
+
+    .card-content p {
+        font-size: 17px;
+    }
+
+    #sponsorsection {
+        background-color: #e0ba7da9;
+        height: 390px;
+    }
+
+    #sponsorsection h2 {
+        text-align: center;
+        padding-top: 14px;
+        font-size: 44px;
+        font-family: 'Merriweather', serif;
+    }
+
+    #sponser {
+        height: 166px;
+        max-width: 1006px;
+        margin: 54px auto;
+    }
+
+    .spimage {
+        height: 70%;
+        margin: 21px;
+    }
+
+    #footer {
+        background-color: black;
+        height: 81px;
+        color: wheat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        font-family: 'Merriweather';
+    }
+}

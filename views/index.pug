@@ -1,0 +1,61 @@
+doctype html
+html
+  head
+    title Arshlaan Coding  Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+      ul
+        div#logo
+            img(src="/static/img/logo.png", alt="logo")
+            | ACA
+        li #[a(href='/') Home]
+        li #[a(href='/') About]
+        li #[a(href='/') Service]  
+        li #[a(href='/') Class Info] 
+        li #[a(href='/contact') Contact us] 
+
+    section#introsection
+      div.title Welcome to Arshlaan's Coding  Academy 
+      div.small  Eat  sleep  code  Repeat
+
+    section#missionsection 
+      h2   Our Mission   
+      div.card 
+          h3  Coding Perfection
+          div.card-box
+            div.card-img
+                img(src="/static/img/1.png")
+
+            div.card-content
+                p This is the best coding academy of the universe    
+      div.card 
+          h3  Code the way you like 
+          div.card-box
+            div.card-img
+                img(src="/static/img/3.png")
+
+            div.card-content
+                p This is the best coding academy of the universe 
+      div.card 
+          h3  Expert Teaching 
+          div.card-box
+            div.card-img
+                img(src="/static/img/2.png")
+
+            div.card-content
+                p This is the best coding academy of the universe 
+
+    section#sponsorsection 
+      h2   Our Sponsor  
+      div#sponser
+          img(src="/static/img/logo1.png", alt="sponser img" , Class="spimage") 
+          img(src="/static/img/logo2.png", alt="sponser img" , Class="spimage") 
+          img(src="/static/img/logo3.png", alt="sponser img" , Class="spimage") 
+          img(src="/static/img/logo4.png", alt="sponser img" , Class="spimage") 
+
+    footer#footer 
+      | Copyright © 2022 ArshlaanCodingAcademy.com | All rights reserved 
+    script
+      include ../static/index.js

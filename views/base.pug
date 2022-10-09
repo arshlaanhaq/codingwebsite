@@ -1,0 +1,24 @@
+//-  base.pug is template
+doctype html
+html
+  head
+    meta(content='width=device-width' initial-scale='1.0'  name='viewport')
+    title Arshlaan Coding  Academy
+    block scripts 
+    block style 
+  body
+    nav#navbar
+      ul
+        div#logo
+            img(src="/static/img/logo.png", alt="logo")
+            a(href="/")  ACA        
+        li #[a(href='/') Home]
+        li #[a(href='/') About]
+        li #[a(href='/') Service]  
+        li #[a(href='/') Class Info] 
+        li #[a(href='/contact') Contact us] 
+      ion-icon.menutgl(name="menu-outline")
+      
+    block content
+    footer#footer 
+       | Copyright © 2022 ArshlaanCodingAcademy.com | All rights reserved
