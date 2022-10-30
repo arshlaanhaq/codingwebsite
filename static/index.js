@@ -4,9 +4,9 @@ Have Fun :)`);
 
 let navbar = document.querySelector("nav");
 let navigation = document.querySelector("#navbar li a");
-let menutgl = document.querySelector(".menutgl");
+let menu = document.querySelector(".menutgl");
 
-menutgl.onclick = function(){
+menu.onclick = function(){
     navbar.classList.toggle('open');
 }
 
