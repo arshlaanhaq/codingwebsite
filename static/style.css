@@ -191,14 +191,14 @@
         width: 158%;
     }
 
-    #navbar li a {
+    #navbar li  {
+        position: absolute;
         visibility: hidden;
         opacity: 0;
         left: 100%;
-        position: absolute;
     }
     
-    .nav.open.navigation{
+    #navbar.open li {
         opacity: 1;
         visibility: visible;
         left: 0;
