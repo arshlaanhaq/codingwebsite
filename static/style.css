@@ -21,33 +21,41 @@
     filter: invert(1);
 
 }
+#logo a{
+    text-decoration: none;
+    padding: 12px 40px;
+    color: white;
+    letter-spacing: 0.1em;
+    font-size: 20px;
+}
 
 #navbar {
+    display: flex;
     background-color: #ae4141;
     padding: 12px 8px;
     font-family: 'Merriweather', serif;
 
 }
 
-#navbar ul {
+.navigation {
     display: flex;
+    position: relative;
     flex-direction: row;
-    /* justify-content: center; 0*/
-    align-items: center;
+    top: 11px;
 
 }
 
-#navbar li {
+.navigation li {
     list-style: none;
 
 }
 
-#navbar a {
+.navigation a {
     text-decoration: none;
     color: white;
 }
 
-#navbar li a {
+.navigation li a {
     text-decoration: none;
     padding: 12px 40px;
     color: white;
@@ -55,8 +63,7 @@
     font-size: 20px;
 
 }
-
-#navbar li a:hover {
+.navigatoin li a:hover {
     color: black;
 
 }
@@ -191,18 +198,27 @@
         width: 158%;
     }
 
-    #navbar li  {
+    .navigation {
         position: absolute;
         visibility: hidden;
         opacity: 0;
         left: 100%;
     }
     
-    #navbar.open li {
+    .open .navigation {
+        top: 97px;
         opacity: 1;
         visibility: visible;
         left: 0;
-
+        display: flex;
+        flex-direction: column;
+        background-color: #bc6464;
+        width: 137%;
+        height: 100vh;
+        height: calc(100vh -80px);
+        padding: 40px;
+        border: 1px solid black;
+        border-radius: 8px;
     }
  
     .menutgl {
