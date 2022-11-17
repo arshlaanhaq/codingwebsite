@@ -53,9 +53,9 @@ app.post('/contact', (req, res)=>{
 
 
 // START THE SERVER
-// app.listen(port,()=>{
-//     console.log(`The application started successfully on ${port}`);
-// });
-app.listen(port,hostname,()=>{
-    console.log(`The application started successfully on http://${hostname}:${port}/`);
+app.listen(port,()=>{
+    console.log(`The application started successfully on ${port}`);
 });
+// app.listen(port,hostname,()=>{
+//     console.log(`The application started successfully on http://${hostname}:${port}/`);
+// });
