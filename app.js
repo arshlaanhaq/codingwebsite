@@ -3,7 +3,8 @@ const path = require("path");
 const app = express();
 const mongoose = require('mongoose');
 const bodyparser = require('body-parser');
-// const  hostname  = '192.168.7.80';
+// const { hostname } = require("os");
+const  hostname  = '192.168.108.80';
 mongoose.connect('mongodb://localhost:27017/contactAcademy');
 const port = 8000;
 
@@ -52,6 +53,9 @@ app.post('/contact', (req, res)=>{
 
 
 // START THE SERVER
-app.listen(port ,()=>{
-    console.log(`The application started successfully on ${port}`);
+// app.listen(port,()=>{
+//     console.log(`The application started successfully on ${port}`);
+// });
+app.listen(port,hostname,()=>{
+    console.log(`The application started successfully on http://${hostname}:${port}/`);
 });
