@@ -4,7 +4,7 @@ const app = express();
 const mongoose = require('mongoose');
 const bodyparser = require('body-parser');
 // const { hostname } = require("os");
-const  hostname  = '192.168.108.80';
+// const  hostname  = '192.168.39.80';
 mongoose.connect('mongodb://localhost:27017/contactAcademy');
 const port = 8000;
 

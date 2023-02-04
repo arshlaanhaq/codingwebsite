@@ -208,20 +208,20 @@
     }
     
     .open .navigation {
-        top: 97px;
+        top: 105px;
         position: absolute;
         opacity: 1;
         visibility: visible;
-        left: 0;
+        left: 0px;
         display: flex;
         flex-direction: column;
         background-color: #bc6464;
-        width: 137%;
-        height: 100vh;
+        width: 259vw;
+        height: 75vh;
         height: calc(100vh -80px);
-        padding: 40px;
+        padding: 27px;
         border: 1px solid black;
-        border-radius: 8px;
+        border-radius: 4px;
     }
  
     .menutgl {
