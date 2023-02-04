@@ -11,7 +11,13 @@ menu.onclick = function(){
 }
 
 
-
+let docTitle = document.title;
+window.addEventListener("blur", ()=>{
+    document.title ="Be Happy:)";
+})
+window.addEventListener("focus",()=>{
+    document.title= docTitle;
+})
 
 
 

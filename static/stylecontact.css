@@ -1,43 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Merriweather:ital@1&display=swap');
-*{
+
+* {
     /* reset css */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-h1{
+h1 {
 
     text-align: center;
     margin: 12px 0;
 }
 
-.container{
+.container {
     min-height: 75vh;
     margin: 37px 0;
 }
 
-.container h1{
+.container h1 {
     font-family: 'DynaPuff', cursive;
     font-size: 36px;
 }
-.myform{
+
+.myform {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
+
 .myinput {
-        width: 40%;
-        padding: 9px;
-        margin: 8px;
-        font-size: 14px;
-        border: 2px solid #9f7435;
-        border-radius: 19px;
-        outline: none;
+    width: 40%;
+    padding: 9px;
+    margin: 8px;
+    font-size: 14px;
+    border: 2px solid #9f7435;
+    border-radius: 19px;
+    outline: none;
 }
-.btn{
+
+.btn {
     padding: 11px 16px;
     border: 2px solid black;
     border-radius: 15px;
@@ -46,4 +50,27 @@ h1{
     cursor: pointer;
     outline: none;
     margin: 24px;
+}
+
+@media only screen and (max-width:898Px) {
+    .container {
+        width: 279vw;
+        height: 215vh;
+    }
+    .container h1{
+        font-size: 81px;
+    }
+    .myform {
+        height: 90vh;
+    }
+
+    .myinput {
+        padding: 17px;
+        margin: 12px;
+        font-size: 37px;
+        width: 67%;
+    }
+    .btn{
+        font-size: 30px;
+    }
 }

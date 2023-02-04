@@ -21,7 +21,8 @@
     filter: invert(1);
 
 }
-#logo a{
+
+#logo a {
     text-decoration: none;
     padding: 12px 40px;
     color: white;
@@ -63,13 +64,14 @@
     font-size: 20px;
 
 }
-.navigatoin li a:hover {
-    color: black;
+
+#navbar li a:hover {
+    color: rgb(6, 6, 6);
 
 }
 
 .menutgl {
-    
+
     display: none;
 
 }
@@ -196,17 +198,15 @@
     #navbar {
         padding: 31px 7px;
         width: 278vw;
-       
+
     }
-
-
     .navigation {
         position: absolute;
         visibility: hidden;
         opacity: 0;
         left: 100%;
     }
-    
+
     .open .navigation {
         top: 105px;
         position: absolute;
@@ -217,13 +217,13 @@
         flex-direction: column;
         background-color: #bc6464;
         width: 259vw;
-        height: 75vh;
+        height: 86vh;
         height: calc(100vh -80px);
         padding: 27px;
         border: 1px solid black;
         border-radius: 4px;
     }
- 
+
     .menutgl {
         position: absolute;
         display: block;
@@ -233,17 +233,25 @@
         left: 247%;
         top: 38px;
     }
+
+    .open .navigation li a {
+        display: block;
+        font-size: 52px;
+        padding: 30px 31px;
+    }
+
     #logo a {
         padding: 12px 7px;
         font-size: 40px;
     }
-   
+
     #logo {
-       
+
         margin: 4px 5px;
         font-size: 33px;
-        
+
     }
+
     #logo img {
         height: 15vh;
         filter: invert(0);
@@ -254,6 +262,7 @@
         height: 162vh;
 
     }
+
     #introsection div.title {
         font-size: 81px;
     }
@@ -267,7 +276,7 @@
     #missionsection {
         height: 280vh;
         margin: 14px 17px;
-        width: 243vw;       
+        width: 243vw;
     }
 
     #missionsection h2 {
@@ -285,17 +294,19 @@
         margin: 20px 186px;
         height: 74vh;
     }
+
     .card-img {
         height: 48vh;
     }
+
     .card-content p {
         font-size: 21px;
     }
-   
+
     .card h3 {
         margin-top: 17px;
         font-size: 27px;
-        
+
     }
 
     #sponsorsection {
@@ -310,10 +321,11 @@
         font-size: 44px;
         font-family: 'Merriweather', serif;
     }
+
     #sponser {
         height: 38vh;
-        
-    }    
+
+    }
 
     #footer {
         background-color: black;
@@ -334,9 +346,10 @@
 
 
 @media (min-width:900px) and (max-width:1300px) {
-    #navbar{
+    #navbar {
         /* width: 158vw; */
     }
+
     #introsection {
         color: white;
         display: flex;

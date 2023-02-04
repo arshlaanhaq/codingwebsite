@@ -12,10 +12,10 @@ block content
   div.container  
         h1 Contact Us
         form(action="/contact", method="post",class="myform")
-            input(type="text",class="myinput", name="name", placeholder="Enter your name") 
-            input(type="phone",class="myinput", name="phone", placeholder="Enter your phone number") 
-            input(type="email",class="myinput", name="email", placeholder="Enter your email Id") 
-            input(type="text",class="myinput", name="address", placeholder="Enter your address") 
-            input(type="text",class="myinput", name="desc", placeholder="Enter your concern") 
+            input(type="text",class="myinput", name="name", placeholder="Enter your name" required autocomplete="off") 
+            input(type="phone",class="myinput", name="phone", placeholder="Enter your phone number" required autocomplete="off") 
+            input(type="email",class="myinput", name="email", placeholder="Enter your email Id" required autocomplete="off") 
+            input(type="text",class="myinput", name="address", placeholder="Enter your address" required autocomplete="off") 
+            input(type="text",class="myinput", name="desc", placeholder="Enter your concern" required autocomplete="off") 
             button(class="btn")
                  | Submit      
