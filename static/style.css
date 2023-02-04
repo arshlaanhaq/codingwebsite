@@ -346,9 +346,9 @@
 
 
 @media (min-width:900px) and (max-width:1300px) {
-    #navbar {
-        /* width: 158vw; */
-    }
+    /* #navbar{
+        width: 158vw; 
+    } */
 
     #introsection {
         color: white;
