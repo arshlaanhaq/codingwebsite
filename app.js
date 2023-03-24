@@ -4,7 +4,7 @@ const app = express();
 const mongoose = require('mongoose');
 const bodyparser = require('body-parser');
 // const { hostname } = require("os");
-const  hostname  = '172.22.240.1';
+const  hostname  = '192.168.9.223';
 mongoose.connect('mongodb://localhost:27017/contactAcademy');
 const port = 8000;
 
@@ -43,7 +43,8 @@ const params = { }
 app.post('/contact', (req, res)=>{
     var mydata =new contact(req.body)
     mydata.save().then(()=>{
-        res.send("This item has been saved to the database")
+        res.send("This item has been saved to the database" )
+       
     }).catch(()=>{
         res.status(400).send("Item was not saved to the database")
     })

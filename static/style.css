@@ -197,38 +197,38 @@
 @media only screen and (max-width:898Px) {
     #navbar {
         padding: 31px 7px;
-        width: 278vw;
+        width: 280vw;
 
     }
     .navigation {
         position: absolute;
         visibility: hidden;
         opacity: 0;
-        left: 100%;
+        /* left: 100%; */
     }
 
     .open .navigation {
-        top: 105px;
+        top: 109px;
         position: absolute;
         opacity: 1;
         visibility: visible;
-        left: 0px;
+        left: 34px;
         display: flex;
         flex-direction: column;
         background-color: #bc6464;
         width: 259vw;
         transition: 0.6s;
-        height: 100vh;
-        height: calc(100vh -80px);
+        height: 90vh;
+        /* height: calc(100vh -80px); */
         padding: 27px;
         border: 1px solid black;
-        border-radius: 4px;
+        border-radius: 24px;
     }
 
     .menutgl {
         position: absolute;
         display: block;
-        font-size: 84px;
+        font-size: 90px;
         padding: 4px;
         cursor: pointer;
         left: 247%;
@@ -237,7 +237,7 @@
 
     .open .navigation li a {
         display: block;
-        font-size: 52px;
+        font-size: 46px;
         padding: 30px 31px;
     }
 
@@ -259,7 +259,7 @@
     }
 
     #introsection {
-        width: 278vw;
+        width: 280vw;
         height: 162vh;
 
     }
